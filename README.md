@@ -11,3 +11,12 @@ Sempre que houver emissão de novo certificado de AC da ICP-Brasil, ou qualquer 
 
 - Certificados da ICP-Brasil - **Vigente**
 - Certificados da ICP-Brasil (contendo os arquivos expirados) - **Completo**
+
+
+## Atualizar certificados
+```sh
+unzip vigentes.zip -d certs
+
+sudo cp certs/* /usr/local/share/ca-certificates/
+sudo update-ca-certificates
+```
